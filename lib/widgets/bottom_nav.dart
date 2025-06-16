@@ -15,8 +15,10 @@ class BottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       currentIndex: currentIndex,
       onTap: onTap,
+      type: BottomNavigationBarType.fixed,
       items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Peminjaman'),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Beranda'),
+        BottomNavigationBarItem(icon: Icon(Icons.list_alt), label: 'Peminjaman'),
         BottomNavigationBarItem(icon: Icon(Icons.assignment_return), label: 'Pengembalian'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profil'),
       ],

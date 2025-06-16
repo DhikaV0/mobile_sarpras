@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'item_list_page.dart';
 import 'peminjaman_page.dart';
 import 'pengembalian_page.dart';
 import 'profile_page.dart';
@@ -15,6 +16,7 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
+    const ItemListPage(),
     const PeminjamanPage(),
     const PengembalianPage(),
     const ProfilePage(),
